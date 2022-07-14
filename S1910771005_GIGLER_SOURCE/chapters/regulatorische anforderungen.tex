@@ -1,0 +1,422 @@
+%Einrücken bei Absatz verhindern
+\setlength{\parindent}{0em} 
+
+%**********************************************************************************
+% Kapitel Regulatorische Anforderungen
+%**********************************************************************************
+\chapter{Regulatorische Anforderungen}
+\label{cha:regulatorische_anforderungen_und_vorgaben}
+Das folgende Kapitel zeigt auf, welche IT-Sicherheitsanforderungen für Banken in Österreich bestehen. Im Zuge der Ausarbeitung liefert das Kapitel einen Überblick über die im Zuge der Arbeit evaluierten Anforderungen an IT-Sicherheit von Aufsichtsbehörden. Zum Ende des Kapitels werden die Anforderungen, die für Banken in Österreich relevant sind, dargestellt.
+\bigbreak
+\section{Regulatorische Anforderungen}
+Betreibt ein Unternehmen konzessionspflichtige Geschäfte im Sinne des Bankwesengesetzes (BWG), wird eine Konzession der zuständigen Aufsichtsbehörde benötigt \autocite{ris}. Für die Abwicklung von Konzessionsverfahren für Kreditinstituten ist die Europäische Zentralbank (EZB\footnote{https://www.ecb.europa.eu}) zuständig. Für österreichische Kreditinstitute, die nicht von der EZB beaufsichtigt werden, ist die Finanzmarktaufsichtsbehörde (FMA\footnote{https://www.fma.gv.at}) für die Erteilung der Konzession zuständig. Die FMA leitet in weiterer Folge den jeweiligen Antrag, zusammen mit einem Beschlussentwurf und den entsprechenden Unterlagen an die EZB zur Entscheidungsfindung weiter. 
+\bigbreak
+Eine Konzession wird erteilt, wenn unter anderem folgende Punkte erfüllt sind \autocite{fma_österreich_2022}:
+\begin{itemize}
+    \item Das Unternehmen wird als Kreditinstitut geführt.
+    \item Das Anfangskapital von 5 Millionen Euro steht zur Verfügung.
+    \item Das Kreditinstitut hat mindestens zwei Geschäftsleiter.
+    \item Der Sitz und die Hauptverwaltung liegen im Inland.
+\end{itemize}
+\bigbreak
+Eine Konzession für den Betrieb von Bankgeschäften kann mit Bedingungen und Auflagen verknüpft sein. Eine aufrechte Konzession ist die Voraussetzung für die Durchführung von Bankgeschäften in Österreich.
+\bigbreak
+Eine Konzession kann gemäß BWG von der EZB oder der FMA widerrufen werden. Dies ist unter anderem erforderlich, wenn die Konzession durch unrichtige Angaben erschlichen wurde oder bestimmten Anforderungen von zuständigen Aufsichtsbehörden nicht nachgekommen wird. Das bedeutet, dass auch das nicht einhalten der von Aufsichtsbehörden vorgeschriebenen Anforderungen zum Schutz der IT-Sicherheit, den Entzug einer aufrechten Konzession mit sich bringen kann.
+\bigbreak
+Aus diesem Grund werden Banken in Österreich regelmäßig von der FMA überprüft. In der Pressemitteilung der FMA vom 04. Januar 2022, werden die Prüfungsschwerpunkte für das Jahr 2022 definiert \autocite{fma_österreich_2022_Teil2}. Unter anderem wird der Schwerpunkt auf die Evaluierung der Cybersecurity in Unternehmen gesetzt. Es ist davon auszugehen, dass die Anforderungen aus dem \glqq{}FMA Leitfaden IT-Sicherheit\grqq{} genauestens überprüft werden.
+
+%**********************************************************************************
+% Kapitel Übersicht über evaluierte Literatur
+%**********************************************************************************
+\section{Evaluierte Aufsichtsbehörden und Anforderungen}\label{uebersicht_evaluierte_literatur_kapitel}
+Im Folgenden wird ein Überblick über die im Zuge der Masterarbeit analysierten Aufsichtsbehörden gegeben. Anschließend werden die von den Aufsichtsbehörden veröffentlichten Anforderungen an IT-Sicherheit einer Bank in Österreich aufgezeigt. Die Aufsichtsbehörden, die sich um Zuge der Recherche als relevant für eine Bank in Österreich herausgestellt haben, werden in diesem Kapitel dargestellt und in Form von Steckbriefen beschrieben. Eine Zusammenfassung über die Aufsichtsbehörden und die jeweils analysierten Anforderungen ist in Tabelle \ref{table:uebersicht_evaluierte_literatur} ersichtlich. Die in \ref{table:uebersicht_evaluierte_literatur} ersichtlichen Aufsichtsbehörden und Anforderungen wurden mittels Recherche im Internet und durch Befragung von Angestellten aus dem Bereich \glqq{}IT-Governance\grqq{} einer Bank in Österreich analysiert. Die Vollständigkeit der Auflistung wird in Kapitel \ref{peer_review} überprüft. 
+\bigbreak
+\begin{table}[H]
+    \tiny
+    \centering
+    \caption{Übersicht über die analysierte Aufsichtsbehörden und relevante Anforderungen.} 
+        \begin{tabular}{llp{10cm}}
+            \hline
+            Nr & Aufsichtsbehörde & Literatur\\
+            \hline\hline
+            1 & BaFin & BAIT-Rundschreiben \autocite{bafin_rundschreiben}\\
+            2 & EBA & Leitlinien für das Management von IKT- und Sicherheitsrisiken \autocite{eba_final_draft}\\
+            3 & EBA & Leitlinien zu Auslagerungen \autocite{eba_outsourcing_arrangements}\\
+            4 & EBA & Leitlinien für die IKT-Risikobewertung im Rahmen des aufsichtlichen Überprüfungs- und Bewertungsprozesses \autocite{eba_risk_assessment}\\
+            5 & EBA & Leitlinien zur zur Sicherheit von Internetzahlungen \autocite{eba_internet_security}\\
+            6 & Eiopa & Leitlinien zu Sicherheit und Governance im Bereich der Informations und Kommunikationstechnologie \autocite{Eiopa_guideline}\\
+            7 & ESMA & Leitlinien zur Auslagerung an Cloud-Anbieter \autocite{ESMA_Cloud}\\
+            8 & FMA & Leitfaden IT-Sicherheit in Verwaltungsgesellschaften \autocite{FMA_Leitfaden_IT_Sicherheit}\\
+            9 & FMA & Leitfaden IT-Sicherheit in Wertpapierdienstleistungsunternehmen und Wertpapierfirmen \autocite{FMA_Leitfaden_IT_Sicherheit_Wertpapier}\\
+            10 & EU & Richtlinie PSD2 \autocite{EU_PSD2}\\
+            11 & EZB & Cyber resilience oversight expetcations for financial market infrastructures \autocite{CROE}\\
+            12 & ENISA & Definition of Cybersecurity \autocite{ENISA_Defition_Cybersecurity}\\
+        \end{tabular}
+        \label{table:uebersicht_evaluierte_literatur}
+\end{table}
+
+%**********************************************************************************
+
+\subsubsection{\underline{BaFin - BAIT Rundschreiben}}
+\begin{itemize}
+    \item Institution: Bundesanstalt für Finanzienstleistungsaufsicht (BaFin\footnote{https://www.bafin.de})
+    \item Titel: BAIT Rundschreiben \autocite{bafin_rundschreiben}
+    \item Version: 10/2017 – 16.08.2021
+    \item Rahmenwerk: Vorgabe
+    \item Inhalt:
+    \begin{itemize}
+        \item IT-Strategie 
+        \item IT-Governance 
+        \item Informationsrisikomanagement 
+        \item Informationssicherheitsmanagement 
+        \item Operative Informationssicherheit 
+        \item Identitäts- und Rechtemanagement 
+        \item IT-Projekte und Anwendungsentwicklung 
+        \item IT-Betrieb 
+        \item Auslagerungen und sonstiger Fremdbezug von IT-Dienstleistungen
+        \item IT-Notfallmanagement 
+        \item Management der Beziehungen mit Zahlungsdienstnutzern 
+        \item Kritische Infrastruktur 
+    \end{itemize}
+\end{itemize}
+\bigbreak
+Die Aufgabe der BaFin besteht in der Aufsicht von Banken, Finanzdienstleister, Versicherer und dem Wertpapierhandel in Deutschland. Die BaFin arbeitet im öffentlichen Interesse und verfolgt den Ansatz, ein funktionsfähiges, stabiles und integres deutsches Finanzsystem zu gewährleisten. Im Jahr 2021 beaufsichtigte die BaFin 1.555 Banken, 1.189 Finanz- und 51 Zahlungs-Institute. Das große Ziel ist es, das Vertrauen von Bankkunden, Versicherten und Anlegern in das deutsche Finanzsystem zu stärken. Aus diesem Grund sorgt die BaFin dafür, dass die von ihr beaufsichtigten Unternehmen etwa geltenden Vorgaben zur IT-Sicherheit oder der Prävention von Geldwäsche und Terrorismusfinanzierung einhalten. \autocite{DieBafin}\\\\
+Auf Basis dieser Aufgaben hat die BaFin die \glqq{}Bankaufsichtliche Anforderungen an die IT\grqq{} (BAIT), in der aktuell gültigen Fassung \glqq{}10/2017\grqq{} veröffentlicht \autocite{bafin_rundschreiben}. Im Zuge der BAIT hat die BaFin Vorgaben definiert, wie Auflagen aus dem Kapitalwesengesetz (KWG) von Finanzinstituten in Deutschland umzusetzen sind \autocite{kwg_gesetze}. Das Rundschreiben gibt einen Rahmen für die technisch-organisatorische Ausstattung der betroffenen Institute bezogen auf IT-Ressourcen, Informationsrisikomanagement und das Informationssicherheitsmanagement vor. Bei der BAIT handelt es sich um eine Vorgabe beziehungsweise einen praxisnahen Rahmen für Anforderungen aus §25 des KWG, verweist jedoch auch auf die Verpflichtung zur Umsetzung gängiger Standards aus dem IT-Grundschutz und der ISO/IEC 27001 \autocite{BSI_informationstechnik_2021} \autocite{tuev_austria_2022} \autocite{DieBafin}.
+\bigbreak
+Vom KWG betroffen sind Kreditinstitute und Finanzdienstleister in der Bundesrepublik Deutschland und Finanzdienstleister der Bundesrepublik Deutschland mit Zweigniederlassungen im Ausland. Aufgrund der Nähe Deutschlands zu Österreich und den engen Wirtschaftsbeziehungen wurde die BAIT für die Analyse relevanter Anforderungen an Banken in Österreich herangezogen. \autocite{MaRisk}
+
+%**********************************************************************************
+
+\subsubsection{\underline{EBA – Leitlinien für das Management von IKT- und Sicherheitsrisiken}}
+
+\begin{itemize}
+    \item Institution: Europäische Bankenaufsichtsbehörde
+    \item Titel: Leitlinien für das Management von IKT- und Sicherheitsrisiken \autocite{eba_final_draft}
+    \item Version: EBA/GL/2019/04
+    \item Rahmenwerk: Leitlinie
+    \item Inhalt: 
+    \begin{itemize}
+        \item Proportionalität 
+        \item Governance und Strategie 
+        \item Rahmenwerk für das Management von IKT- und Sicherheitsrisiken
+        \item Informationssicherheit 
+        \item Physische Sicherheit 
+        \item IKT-Betriebsmanagement 
+        \item IKT-Projekt- und Änderungsmanagement 
+        \item Geschäftsfortführungsmanagement 
+        \item Pflege der Kundenbeziehungen mit Zahlungsdienstnutzern
+    \end{itemize}
+\end{itemize}
+\bigbreak
+Die EBA ist eine unabhängige EU-Behörde für die Regulierung und Beaufsichtigung von Banken. Ihre Aufgabe ist die Wahrung der Finanzstabilität in der EU, der Schutz der Integrität und das ordnungsgemäße Funktionieren des Bankensektors. Die EBA ist für die Erarbeitung des einheitlichen Europäischen Regelwerks für den Finanzsektor zuständig und definiert verbindliche technische Standards und Leitlinien. Sie trägt damit zur Etablierung und zum Erhalt gleicher Wettbewerbsbedingungen, sowie dem Schutz von Einlegern, Anlegern und Verbrauchen bei. \autocite{EBA} 
+\bigbreak
+Die \glqq{}Leitlinie für das Management von IKT- und Sicherheitsrisiken\grqq{} definiert Anforderungen an Kreditinstitute, Wertpapierfirmen und Zahlungsdienstleister, die sich auf das Management von Informations- und Kommunikationstechnologie (IKT) und Sicherheitsrisiken beziehen. Sie umfasst Erwartungen der EBA an die Informationssicherheit und Cybersicherheit für Informationen die auf IKT-Systemen bearbeitet werden. 
+Die Leitlinie ist für alle Kreditinstitute, Wertpapierfirmen und Zahlungsdienstleister innerhalb der Europäischen Union gültig. Die Leitlinien wurden aufgrund der Relevanz für Banken in Österreich in die Anforderungsmatrix mit aufgenommen. \autocite{PFR}
+
+%**********************************************************************************
+
+\subsubsection{\underline{EBA – Leitlinien zu Auslagerungen}}
+\begin{itemize}
+    \item Institution: Europäische Bankenaufsichtsbehörde
+    \item Titel: Leitlinien zu Auslagerungen \autocite{eba_outsourcing_arrangements} 
+    \item Version: EBA/GL/2019/02
+    \item Rahmenwerk: Leitlinie
+    \item Inhalt:
+    \begin{itemize}
+        \item Verhältnismäßigkeit 
+        \item Bewertung von Auslagerungsvereinbarungen 
+        \item Rahmen für die Governance
+        \item Auslagerungsprozess
+        \item An die zuständigen Behörden gerichtete Leitlinien zu Auslagerungen
+    \end{itemize}
+\end{itemize}
+\bigbreak
+In der Leitlinie zur Auslagerung werden die internen Governance-Regelungen, einschließlich eines soliden Risikomanagements festgelegt, die im Falle einer Auslagerung von Funktionen beachtet werden müssen. Die Leitlinie ist für alle Zahlungsinstitute und E-Geld-Institute innerhalb der Europäischen Union gültig, wurde aber aufgrund des reinen Fokus auf das Thema Auslagerung nicht in die Anforderungsmatrix aufgenommen. 
+
+%**********************************************************************************
+
+\subsubsection{\underline{EBA – Leitlinien für die IKT-Risikobewertung}}
+\begin{itemize}
+    \item Institution: Europäische Bankenaufsichtsbehörde
+    \item Titel: Leitlinien für die IKT-Risikobewertung im Rahmen des aufsichtlichen \\Überprüfuungs- und Bewertungsprozesses \autocite{eba_risk_assessment} 
+    \item Version: EBA/GL/2017/05
+    \item Rahmenwerk: Leitlinie
+    \item Inhalt:
+    \begin{itemize}
+        \item Anforderungen an die IKT-Risikobewertung 
+        \item Bewertung der IKT-Risikopositionen und –kontrollen der Institute
+    \end{itemize}
+\end{itemize}
+\bigbreak
+Die Leitlinie zielt darauf ab, die Aufsichtspraktiken bei der Bewertung des Informations- und Kommunikationstechnologie-Risikos sicherzustellen. Die Leitlinie ist für alle Zahlungsinstitute innerhalb der Europäischen Union gültig, wurde aber aufgrund des Fokus auf die Risikobewertung nicht in die Anforderungsmatrix aufgenommen. 
+
+%**********************************************************************************
+
+\subsubsection{\underline{EBA – Leitlinien zur Sicherheit von Internetzahlungen}}
+\begin{itemize}
+    \item Institution: Europäische Bankenaufsichtsbehörde 
+    \item Titel: Leitlinien zur Sicherheit von Internetzahlungen \autocite{eba_internet_security}
+    \item Version: EBA/GL/2014/12
+    \item Rahmenwerk: Leitlinie
+    \item Inhalt:
+    \begin{itemize}
+        \item Anwendungsbereich und Begriffsbestimmungen 
+        \item Leitlinien zur Sicherheit von Internetzahlungen 
+        \item Anhang 1: Beispiele für bewährte Vorgehensweisen 
+    \end{itemize}
+\end{itemize}
+\bigbreak
+In dieser Leitlinie werden Mindestanforderungen im Bereich der Sicherheit von Internetzahlungen definiert, die für die Erbringung von angebotenen Zahlungsdiensten durch Zahlungsdienstleister über das Internet benötigt werden. Die Leitlinie ist für alle Zahlungsinstitute innerhalb der Europäischen Union gültig und wurde daher in die Anforderungsmatrix aufgenommen.
+
+%**********************************************************************************
+
+\subsubsection{\underline{EIOPA – Leitlinien zur Sicherheit und Governance im Bereich der IKT}}
+\begin{itemize}
+    \item Institution: Europäische Aufsichtsbehörde für das Versicherungswesen und die betriebliche Altersversorgung
+    \item Titel: Leitlinien zur Sicherheit und Governance im Bereich der Informations- und Kommunikationstechnologie \autocite{Eiopa_guideline}
+    \item Version: EIOPA-BoS-20/600
+    \item Rahmenwerk: Leitlinie
+    \item Inhalt:
+        \begin{itemize}
+            \item Verhältnismäßigkeit   
+            \item IKT innerhalb des Governance-Systems   
+            \item IKT-Strategie   
+            \item IKT- und Sicherheitsrisiken innerhalb des Risikomanagementsystems   
+            \item Revision   
+            \item Informationssicherheitspolitik und -maßnahmen   
+            \item Informationssicherheitsfunktion   
+            \item Logische Sicherheit   
+            \item Physische Sicherheit 
+            \item Sicherheit des IKT-Betriebs   
+            \item Überwachung der Sicherheit   
+            \item Überprüfung, Bewertung und Testen der Informationssicherheit 
+            \item Schulungen und Sensibilisierungsmaßnahmen zum Thema Informationssicherheit 
+            \item Management des IKT-Betriebs 
+            \item Management von IKT-Vorfällen und -Problemen 
+            \item Management von IKT-Projekten   
+            \item Erwerb und Entwicklung von IKT-Systemen   
+            \item IKT-Änderungsmanagement   
+            \item Betriebliches Kontinuitätsmanagement   
+            \item Business-Impact-Analyse   
+            \item Betriebskontinuitätsplanung   
+            \item Reaktions- und Wiederherstellungspläne   
+            \item Testen der Pläne 
+            \item Krisenkommunikation   
+            \item Outsourcing von IKT-Diensten und IKT-Systemen
+        \end{itemize}
+\end{itemize}
+\bigbreak
+Die EIOPA ist eine Agentur der Europäischen Union, mit Sitz in Frankfurt am Main. Als Teil des europäischen Systems der Finanzaufsicht berät sie die Europäische Kommission, das Europäische Parlament und den Rat der Europäischen Union, als unabhängiges Gremium. Auf diese Weise leistet die EIOPA einen wichtigen Beitrag zur Stabilität der Finanzprodukte, sorgt für Transparenz an den Finanzmärkten und schützt Versicherungsnehmer, Versorgungsanwärter und Leistungsempfänger. Da verstärkt die Notwendigkeit erkannt wird, dass Unternehmen für Cyberrisiken gerüstet sind und über einen soliden Cybersicherheitsrahmen verfügen, geht die Leitlinie ebenfalls auf die Cybersicherheit im Rahmen der Informationssicherheitsmaßnahmen eines Unternehmens ein. Die Leitlinie ist für Versicherungs- und Rückversicherungsunternehmen im Europäischen Wirtschaftsraum gültig. Die Anforderungen wurden aufgrund der fehlenden Relevanz für Bank-Institute nicht in die Anforderungsmatrix aufgenommen. \autocite{EIOPA} 
+
+%**********************************************************************************
+
+\subsubsection{\underline{ESMA – Leitlinien zur Auslagerung an Cloud Anbieter}}
+\begin{itemize}
+    \item Institution: Europäische Wertpapier- und Marktaufsichtsbehörde
+    \item Titel: Leitlinien zur Auslagerung an Cloud Anbieter \autocite{ESMA_Cloud}
+    \item Version: 10/05/21 ESMA50-164-4285 DE
+    \item Rahmenwerk: Leitlinie
+    \item Inhalt: 
+        \begin{itemize}
+        \item Governance, Kontrolle und Dokumentation
+        \item Risikoanalyse der Auslagerung und Due-Diligence-Prüfung
+        \item Zentrale Bestandteile des Vertrags
+        \item Informationssicherheit
+        \item Ausstiegsstrategien
+        \item Zugangs- und Prüfungsrecht
+        \item Sub-Auslagerungen
+        \item Schriftliche Mitteilung an die zuständigen Behörden
+        \item Überwachung von Auslagerungsvereinbarungen mit Cloud-Anbietern
+    \end{itemize}
+\end{itemize}
+\bigbreak
+Die ESMA ist die Finanzmarktaufsichtsbehörde der Europäischen Union mit dem Auftrag, den Anlegerschutz zu verbessern und einen stabilen, geregelten und funktionierenden Finanzmarkt im Europäischen Wirtschaftsraum zu fördern. Sie ist eine unabhängige EU-Behörde mit Sitz in Paris und stellt sicher, dass die Bedürfnisse der Verbraucher umfassend berücksichtigt, deren Rechte gestärkt aber auch deren Verantwortlichkeit anerkannt werden. Die ESMA fördert die Integrität, Transparenz und Effizient der Finanzmärkte und trägt so zu einer stabilen Marktinfrastruktur bei. Eine weitere Aufgabe der ESMA ist die Koordination der Wertpapieraufsichtsbehörden und die Unterstützung bei Krisensituationen. Die Leitlinie zur Auslagerung an Cloud Anbieter etabliert eine effiziente und wirksame Aufsichtspraktik für die Sicherstellung der Anforderungen, bezogen auf Auslagerungen an Cloud-Anbieter und ist für alle Finanzunternehmen im Europäischen Wirtschaftsraum gültig. Aufgrund der Relevanz für Banken in Österreich wurden die Anforderungen der Leitlinien in die Anforderungsmatrix übernommen. \autocite{ESMA}
+
+%**********************************************************************************
+
+\subsubsection{\underline{FMA – Leitfaden IT-Sicherheit in Verwaltungsgesellschaften}}
+\begin{itemize}
+    \item Institution: Finanzmarktaufsichtsbehörde Österreich
+    \item Version: Nr. 02/2020 - 20.08.2020
+    \item Rahmenwerk: Leitfaden
+    \item Titel: Leitfaden IT-Sicherheit in Verwaltungsgesellschaften \autocite{FMA_Leitfaden_IT_Sicherheit} 
+    \item Inhalt:
+        \begin{itemize}
+        \item Rechtsgrundlagen und Grundlegendes 
+        \item IT-Strategie 
+        \item IT-Governance 
+        \item Sicherheitsrichtlinien 
+        \item Informationsrisikomanagement/Informationssicherheitsmanagement 
+        \item Benutzerberechtigungsmanagement 
+        \item Schwachstellenmanagement 
+        \item IT-Projekte, Anwendungsentwicklung und zugekaufte Software 
+        \item IT-Betrieb und Datenintegrität 
+        \item IT-Auslagerungen 
+        \item Verfügbarkeit und Kontinuität, Notfallmanagement 
+        \item Besondere Aspekte bei VerwaltungsgesellschaftenLeitlinien zur Auslagerung an Cloud-Anbieter 
+    \end{itemize}
+\end{itemize}
+\bigbreak
+Der Wertpapierhandel und die Finanzmarktinfrastruktur in Österreich unterliegen aufgrund des volkswirtschaftlichen Interesses einer besonderen staatlichen Aufsichtspflicht. Im Jahr 2002 hat sich die FMA in ihrer Rolle als unabhängige, weisungsfreie und integrierte Aufsichtsbehörde dieser Aufgabe angenommen. Sie vereint somit die Aufsicht über Kreditinstitute, Versicherungen, Pensionskassen und Wertpapiermärkte. Die FMA ist sich der immer bedeutender werdenden Möglichkeiten und Risiken, welche aus der IT resultieren bewusst. Aufgrund der gestiegenen Risikolage sieht die FMA die Notwendigkeit, den Verwaltungsgesellschaften einen Überblick über Ausgestaltung, Anforderungen und Vorkehrungen betreffend der IT-Sicherheit zur Verfügung zu stellen. Der Leitfaden stellt keine Verordnung dar, sondern soll vielmehr Know-How im Bereich IT-Sicherheit vermitteln und die Entwicklung eines gemeinsamen Verständnisses zum Thema IT-Sicherheit fördern. Aufgrund der Relevanz der FMA für Banken in Österreich, wurde der Leitfaden in die Anforderungsmatrix übernommen. \autocite{FMA}
+
+%**********************************************************************************
+
+\subsubsection{\underline{FMA - Leitfaden IT-Sicherheit in Wertpapierdienstleistungsunternehmen und Wertpapierfirmen}}
+\begin{itemize}
+    \item Institution: Finanzmarktaufsichtsbehörde Österreich
+    \item Version: Nr. 04/2018 - 29.08.2018
+    \item Rahmenwerk: Leitfaden
+    \item Titel: Leitfaden IT-Sicherheit in Wertpapierdienstleistungsunternehmen und Wertpapierfirmen \autocite{FMA_Leitfaden_IT_Sicherheit_Wertpapier}
+    \item Inhalt: 
+    \begin{itemize}
+        \item Rechtsgrundlagen und grundlegendes 
+        \item IT-Strategie 
+        \item IT-Governance 
+        \item Sicherheitsrichtlinien 
+        \item Informationsrisikomanagement/Informationssicherheitsmanagement 
+        \item Benutzerberechtigungsmanagement 
+        \item Schwachstellenmanagement 
+        \item IT-Projekte, Anwendungsentwicklung und zugekaufte Software 
+        \item IT-Betrieb und Datenintegrität 
+        \item IT-Auslagerungen 
+        \item Verfügbarkeit und Kontinuität, Notfallmanagement 
+        \item Besondere Aspekte bei Wertpapierfirmen bzw. Wertpapierdienstleistungsunternehmen
+    \end{itemize}
+\end{itemize}
+\bigbreak
+Der Leitfaden deckt sich großteils mit dem \glqq{}Leitfaden IT-Sicherheit in Verwaltungsgesellschaften\grqq{}. Aufgrund der Relevanz der FMA für Banken in Österreich und gewisser Unterschiede zum bereits genannten Leitfaden, wurde der Leitfaden in die Anforderungsmatrix übernommen.
+
+%**********************************************************************************
+
+\subsubsection{\underline{EU – PSD2}}
+\begin{itemize}
+    \item Institution: Europäische Union
+    \item Titel: Delegierte Verordnung zur Ergänzung der Richtlinie (EU) 2015/2366 des Europäischen Parlaments und des Rates durch technische Regulierungsstandards für eine starke Kundenauthentifizierung und für sichere offene Standards für die Kommunikation (PSD2) \autocite{EU_PSD2}
+    \item Version: 2015/2366 auf Basis 2007/64/EG
+    \item Rahmenwerk: Verordnung
+    \item Inhalt:
+    \begin{itemize}
+        \item Titel 1 - Gegestand, Anwendungsbereich und Begriffsbestimmungen
+        \item Titel 2 - Zahlungsdienstleister
+        \item Titel 3 - Transparenz der Vertragsbedingungen und Informationspflichten der Zahlungsdienste
+        \item Titel 4 - Rechte und Pflichten bei der Erbringung und Nutzung von Zahlungsdiensten
+        \item Titel 5 - Delegierte Rechtsakte und technische Regulierungsstandards
+        \item Titel 6 - Schlussbestimmungen
+    \end{itemize}
+\end{itemize}
+\bigbreak
+Die \glqq{}Delegierte Verordnung zur Ergänzung der Richtlinie (EU) 2015/2366 des Europäischen Parlaments und des Rates durch technische Regulierungsstandards für eine starke Kundenauthentifizierung und für sichere offene Standards für die Kommunikation\grqq{} ist eine EU-Richtline zur Regulierung von Zahlungsdiensleistern und Zahlungsdiensten. Die Aufgabe der Richtlinie ist es die Sicherheit im Zahlungsverkehr zu erhöhen, den Verbraucherschutz zu stärken, Innovationen zu fördern und den Wettbewerb im Markt zu steigern. Die PSD2 ist für Zahlungen im Europäischen Wirtschaftsraum gültig und findet teilweise auch Anwendungen auf Zahlungen mit Nicht-EU-Währungen. Aufgrund der klaren Regelungen der PSD2 bei der Nutzung von Überweisungen im Onlinebanking oder für das Abfragen und Auswerten von Kontoinformationsdiensten ist sie speziell für Banken in Österreich relevant. Aus diesem Grund wurde die PSD2 in die Anforderungsmatrix aufgenommen. 
+
+%**********************************************************************************
+
+\subsubsection{\underline{EZB - Cyber resilience oversight expectations for finanzial market infrastructures}}
+\begin{itemize}
+    \item Institution: Europäische Zentralbank 
+    \item Titel: Cyber resilience oversight expectations for finanzial market infrastructures (CROE) \autocite{CROE}
+    \item Version: nicht vorhanden
+    \item Rahmenwerk: Leitfaden
+    \item Inhalt: 
+    \begin{itemize}
+        \item Governance
+        \item Identification
+        \item Protection
+        \item Detection
+        \item Response and recovery
+        \item Testing
+        \item Situational awareness
+        \item Learning and evolving
+    \end{itemize}
+\end{itemize}
+\bigbreak
+Die EZB ist als zentrale Einrichtung des Eurosystems für die Bankenaufsicht zuständig. Das Ziel der EZB ist die Gewährleistung der Preisstabilität im EWR und die Verwaltung der einheitlichen Währung der EU, dem Euro. Die EZB hat ihren Standort in Frankfurt am Main und tagt zweimal im Monat. Im Zuge dieser Tagungen werden wirtschaftliche und monetäre Entwicklungen bewertet. 
+Zu den weiteren Aufgaben der EZB zählen unter anderem die Festlegung des Leitzinses, die Verwaltung von Währungsreserven und die Gewährleistung der Sicherheit und Stabilität im europäischen Bankensystem. \autocite{EZB}
+\bigbreak
+Die Sicherheit und die Stabilität von Finanzinstituten ist essentiell für die Arbeit der EZB. Aus diesem Grund veröffentlichte die EZB im Jahr 2016 die CROE mit dem Ziel, Finanzunternehmen mit detaillierte Schritte für die Steigerung der eigenen Cyber-Resilienz zu unterstützen. Bei der Erstellung der CROE wurde von der EZB Bezug auf bereits bestehende internationale Richtlinien und Frameworks genommen. Auch wenn die EZB die Umsetzung von CROE nicht voraussetzt, stellt diese jedoch einen gewissen Standard für die Erwartungen nationaler Aufsichtsbehörden \autocite{CROE}. Da es sich bei CROE um keine zwingend umzusetzenden Vorgaben handelt und die Inhalte von CROE die Basis für Anforderungen von nationalen Aufsichtsbehörden stellt, wurde die CROE nicht in die Anforderungsmatrix mit aufgenommen. 
+
+%**********************************************************************************
+
+\subsubsection{\underline{Agentur der Europäischen Union für Cybersicherheit - Definition of Cybersecurity}}
+\begin{itemize}
+    \item Institution: Agentur der Europäischen Union für Cybersicherheit
+    \item Titel: Definition of Cybersecurity \autocite{ENISA_Defition_Cybersecurity} 
+    \item Version: V1.0 - Dezember 2015
+    \item Rahmenwerk: Empfehlung / Whitepaper
+    \item Inhalt: 
+    \begin{itemize}
+        \item Introduction
+        \item Common understanding of Cybersecurity
+        \item Terminology of Cybersecurity in documentation
+        \item Standardisation work in Cybersecurity
+        \item Overlaps in standardisation efforts
+        \item Gaps in standardisation activities
+        \item Recommendations
+    \end{itemize}
+\end{itemize}
+\bigbreak
+Die Aufgabe der \glqq{}Agentur der Europäischen Union für Cybersicherheit\grqq{} (ENISA\footnote{https://www.enisa.europa.eu}) besteht in der Gewährleistung und dem Schutz der Netz- und Informationssicherheit in der Europäischen Union. Sie unterstützt einzelstaatlichen Behörden und EU-Institionen in Bezug auf Netz- und Informationssicherheit. Des Weiteren fungiert die ENISA als zentrales Forum und unterstützt EU-Institutionen, staatliche Behörden und Unternehmen bei der Zusammenarbeit im Bereich Netz- und Informationssicherheit. Die ENISA verfolgt mit der Veröffentlichung der \glqq{}Definition of Cybersecurity\grqq{} zum einen das Ziel ein gemeinsames Verständnis des Begriffs \glqq{}Cybersecurity\grqq{} und zum anderen einen Überblick über Organisationen, die sich für die Standardisierung im Bereich der Cybersicherheit einsetzen, zu schaffen. Da das Dokument keine Anforderungen an technische IT-Sicherheit liefert, wurde das Dokument nicht in die Anforderungsmatrix aufgenommen. \autocite{ENISA}
+
+%**********************************************************************************
+% Kapitel Peer Review
+%**********************************************************************************
+
+\section{Peer Review}
+\label{peer_review}
+Um die Vollständigkeit der in Kapitel \ref{uebersicht_evaluierte_literatur_kapitel} analysierten Literatur zu überprüfen wurden Peer Reviews mit drei Personen, aus dem Bereich IT-Sicherheit und IT-Governance einer Bank in Österreich, durchgeführt:
+\bigbreak
+\begin{itemize}
+    \item Peer 1: Chief Information Security Officer einer Bank in Österreich
+    \item Peer 2: Informationssicherheits Beauftragter einer Bank in Österreich
+    \item Peer 3: Angestellter im Bereich IT-Governance einer Bank in Österreich
+\end{itemize}
+\bigbreak
+
+Im Zuge des Reviews wurden die Peers gebeten folgende Fragen zu beantworten:
+\subsubsection{Fragestellung 1 - Aufsichtsbehörden}
+\begin{itemize}
+    \item Welchen Aufsichtsbehörden müssen Sie im Rahmen von regulatorischen Überprüfungen der Bank in Bezug auf IT-Sicherheit Rede und Antwort stehen?
+    \item Welchen Aufsichtsbehörden gegenüber sind sie im Falle eines Security-Incidents innerhalb der Bank meldepflichtig?
+    \item Sind die in Tabelle \ref{table:uebersicht_evaluierte_literatur} aufgelisteten Aufsichtsbehörden Ihrer Meinung nach relevant für eine Bank in Österreich?
+    \item Ist die Auflistung relevanter Aufsichtsbehörden für eine Bank in Österreich in Tabelle \ref{table:uebersicht_evaluierte_literatur} vollständig?
+    \item Falls nicht, welche relevanten Aufsichtsbehörden fehlen?
+\end{itemize}
+\subsubsection{Fragestellung 2 - Richtlinien}
+\begin{itemize}
+    \item An welchen Richtlinien orientiert sich Ihr Unternehmen bei der Etablierung von IT-Sicherheitsanforderungen bzw. bei der Erstellung von Governance-Richtlinien?
+    \item Sind die in Tabelle \ref{table:uebersicht_evaluierte_literatur} aufgelisteten Richtlinien Ihrer Meinung nach relevant für eine Bank in Österreich?
+    \item Ist die Auflistung relevanter Richtlinien in Tabelle \ref{table:uebersicht_evaluierte_literatur} vollständig?
+    \item Falls nicht, welche relevanten Richtlinien fehlen?
+\end{itemize}
+\bigbreak
+
+\subsubsection{Auswertung der Fragen}
+Die von den Peers beantworteten Fragebögen wurden ausgewertet. Auf Frage 1 antworteten die Peers, dass primär an die FMA zurückgemeldet werden muss. Im Falle von Großbanken werden die regulatorischen Überprüfungen direkt von der ÖNB durchgeführt. Im Falle eines Security-Incidents besteht eine Meldepflicht gegenüber der FMA. Im Falle von Großbanken besteht die Meldepflicht gegenüber der EZB. Die Peers sind sich darüber einig, dass die EIOPA nur für Versicherungen und nicht für Banken zuständig ist. Des Weiteren merken alle Peers an, dass die EU keine Aufsichtsbehörde in eigentlichen Sinne sei. Die EU gibt den Rahmen vor, der in weiterer Folge von den zuständigen Aufsichtsbehörden im Zuge von Überprüfungen adressiert wird. Auch die ENISA ist keine Aufsichtsbehörde sondern unterstützt öffentliche Institutionen und Behörden im Auftrag der EU. 
+Die Peers sind sich darüber einig, dass die Auflistung relevanter Aufsichtsbehörden in Tabelle \ref{table:uebersicht_evaluierte_literatur} für eine Bank in Österreich vollständig ist. Der Vollständigkeit halber können jedoch noch die ISO und die DSB erwähnt werden, auch wenn sich der Inhalt dieser in erster Linie nicht an IT-Sicherheit richtet. Die Transkription der Reviews ist in Anhang \ref{app:Peer Review} ersichtlich.
+\bigbreak
+Bezogen auf Frage 2 sind sich die Peer darüber einig, dass bei der Erstellung von IT-Sicherheitsanforderungen und Governance-Richtlinien die Richtlinien der EBA und der FMA betrachtet werden. Des Weiteren sind sich die Peers darüber einig, dass die aufgelisteten Richtlinien in Tabelle \ref{table:uebersicht_evaluierte_literatur} vollständig sind. 
+
+%**********************************************************************************
+% Kapitel Übersicht über verwendete Literatur
+%**********************************************************************************
+
+\section{Verwendete Richtlinien}\label{Übersicht_Literatur}
+Auf Basis der Analyse der Literatur in Kapitel \ref{uebersicht_evaluierte_literatur_kapitel} und des Ergebnisses der durchgeführten Peer Reviews in Kapitel \ref{peer_review}, wurden nur die in Tabelle \ref{table:uebersicht_verwendete_literatur} enthaltenen Anforderungen an IT-Sicherheit in die Anforderungsmatrix aufgenommen.
+Die \glqq{}Leitlinien zu Auslagerungen\grqq{} der EBA werden aufgrund des Fokus auf das Thema Auslagerungen nicht aufgenommen. Die \glqq{}Leitlinien für die IKT-Risikobewertung im Rahmen des aufsichtlichen Überprüfungs- und Bewertungsprozesses\grqq{} der EZB beschäftigt sich einzig mit der Risikominimierung/-bewertung und enthalten keine technischen Anforderungen an die IT-Sicherheit für Banken in Österreich. Die \glqq{}Cyber resilience oversight expetcations for financial market infrastructures\grqq{} der EZB stellt keine zwingend umzusetzende Vorgabe dar und wurde daher nicht aufgenommen. Des Weiteren bildet die CROE die Basis für Anforderungen von nationalen Aufsichtsbehörden, daher ist mit Überschneidungen in den analysierten Dokumenten zu rechnen. Die \glqq{}Definition of Cybersecurity\grqq{} der ENISA beinhaltet keine technischen IT-Sicherheitsanforderungen und wurde deshalb nicht in die Anforderungsmatrix aufgenommen.
+\bigbreak
+\begin{table}[H]
+    \centering
+    \tiny
+    \caption{Übersicht über alle Richtlinien, die im Zuge der Erstellung der Anforderungsmatrix betrachtet werden} 
+        \begin{tabular}{lll}
+            \hline
+            Nr & Aufsichtsbehörde & Literatur\\
+            \hline\hline
+            1 & BaFin & BAIT-Rundschreiben \autocite{bafin_rundschreiben}\\
+            2 & EBA & Leitlinien für das Management von IKT- und Sicherheitsrisiken \autocite{eba_final_draft}\\
+            3 & EBA & Leitlinien zur zur Sicherheit von Internetzahlungen \autocite{eba_internet_security}\\
+            4 & ESMA & Leitlinien zur Auslagerung an Cloud-Anbieter \autocite{ESMA_Cloud}\\
+            5 & FMA & Leitfaden IT-Sicherheit in Verwaltungsgesellschaften \autocite{FMA_Leitfaden_IT_Sicherheit}\\
+            6 & FMA & Leitfaden IT-Sicherheit in Wertpapierdienstleistungsunternehmen und Wertpapierfirmen \autocite{FMA_Leitfaden_IT_Sicherheit_Wertpapier}\\
+            7 & EU & Richtlinie PSD2 \autocite{EU_PSD2}\\
+        \end{tabular}
+        \label{table:uebersicht_verwendete_literatur}
+\end{table}
